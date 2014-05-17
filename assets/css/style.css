@@ -1,0 +1,207 @@
+ .header_on {
+height: 129px;
+background: #050A49 url(../img/header_on_bg.jpg) no-repeat center 1px;
+}
+
+.header{ width: 960px; margin: 0 auto; position: relative; }
+.logo{ display: block; width: 283px;  position: absolute; left: 0px; top: 38px;  }
+
+.menu{ width: 655px; height: 100px; position: absolute; left: 320px; top: 10px; font-family: "microsoft yahei"; }
+.menu li{ float: left; width: 100px; height: 50px; text-align: center; padding: 30px 0 20px 0; line-height: 40px; font-weight: bold; }
+.menu li a{ color: white; padding: 5px; }
+.menu li.hover{ color: white !important;}
+.language{ width: 100px; height: 16px; line-height: 16px; font-size: 12px; text-align: right; position: absolute; right: 0; top: 54px; color: #cca294; font-family: "microsoft yahei"; }
+.language a{ color: #cca294; }
+.language a:hover{ color: white; }
+.language span{ margin: 0 4px; }
+
+ol, ul {
+list-style: none;
+}
+
+
+
+
+    #slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:5px;
+    }
+
+    a.slidesjs-next,
+    a.slidesjs-previous,
+    a.slidesjs-play,
+    a.slidesjs-stop {
+      background-image: url(..//img/btns-next-prev.png);
+      background-repeat: no-repeat;
+      display:block;
+      width:12px;
+      height:18px;
+      overflow: hidden;
+      text-indent: -9999px;
+      float: left;
+      margin-right:5px;
+    }
+
+    a.slidesjs-next {
+      margin-right:10px;
+      background-position: -12px 0;
+    }
+
+    a:hover.slidesjs-next {
+      background-position: -12px -18px;
+    }
+
+    a.slidesjs-previous {
+      background-position: 0 0;
+    }
+
+    a:hover.slidesjs-previous {
+      background-position: 0 -18px;
+    }
+
+    a.slidesjs-play {
+      width:15px;
+      background-position: -25px 0;
+    }
+
+    a:hover.slidesjs-play {
+      background-position: -25px -18px;
+    }
+
+    a.slidesjs-stop {
+      width:18px;
+      background-position: -41px 0;
+    }
+
+    a:hover.slidesjs-stop {
+      background-position: -41px -18px;
+    }
+
+    .slidesjs-pagination {
+      margin: 7px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(..//img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+
+
+
+     #slides {
+      display: none
+    }
+
+    .container {
+      margin: 0 auto
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    }
+
+
+
+
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+color: #0F0A4C;
+font-weight: bold;
+text-decoration: none;
+background-color: #fff;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+}
+
+.navbar-inner {
+min-height: 40px;
+}
+
+
+.navbar-inner {
+min-height: 40px;
+padding-right: 20px;
+padding-left: 20px;
+background-color: #fff;
+background-image: none;
+border: 0px solid #d4d4d4;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+-webkit-box-shadow: 0 rgba(0, 0, 0, 0.065);
+-moz-box-shadow: 0 rgba(0, 0, 0, 0.065);
+box-shadow: 0 rgba(0, 0, 0, 0.065);
+}
+
+.bs-docs-featurette-title {
+font-size: 40px;
+}
