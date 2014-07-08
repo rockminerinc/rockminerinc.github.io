@@ -20,20 +20,20 @@
 
 #第二步 连接组装
 
-  * 将4条短USB线分别插入HUB，连接MCU控制板,将长USB线小端插入HUB，另外一端连接树莓派
+* 将4条短USB线分别插入HUB，连接MCU控制板,将长USB线小端插入HUB，另外一端连接树莓派
  
  ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/usbhub2.png)
  
  ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/usbmculine.png)
   
-  * 将树莓派电源线黑色一端插入树莓派，白色一端插入刀片板插座
+* 将树莓派电源线黑色一端插入树莓派，白色一端插入刀片板插座
 
  ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/redline.png)
  
  ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/raspberrypiotherend.png)
 
- * 将6PIN电源线插入刀片电源插口，连接好电源
- * 将网线插入树莓派网口
+* 将6PIN电源线插入刀片电源插口，连接好电源
+* 将网线插入树莓派网口
  
 #第三步 开始挖矿
  * 打开浏览器，输入192.168.1.254进入RockWeb挖矿界面
