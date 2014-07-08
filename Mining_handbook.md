@@ -1,23 +1,38 @@
 #第一步 清点配件
 配件清单为：
 
- * 5根USB线(4根短的,1根长的)
- * 1个4口USBhub
- * 树莓派+树莓派电源线
- * 2根6pin电源线
+* 5根USB线(4根短的,1根长的)
+![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/usblines.png)
+* 1个4口USBhub
+![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/usbhub.png)
+* 树莓派+树莓派电源线
+![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/raspberrypi.png)
+* 2根6pin电源线
+![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/psulines.png)
+
 
 #第二步 连接组装
 
- * 将4条短USB线分别插入HUB，连接MCU控制板
- * 将长USB线小端插入HUB，另外一端连接树莓派
- * 将树莓派电源线黑色一端插入树莓派，白色一端插入刀片板插座
+  * 将4条短USB线分别插入HUB，连接MCU控制板,将长USB线小端插入HUB，另外一端连接树莓派
+ ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/usbhub2.png)
+ ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/usbmculine.png)
+  * 将树莓派电源线黑色一端插入树莓派，白色一端插入刀片板插座
+ ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/redline.png)
+ ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/raspberrypiotherend.png)
+
  * 将6PIN电源线插入刀片电源插口，连接好电源
  * 将网线插入树莓派网口
  
 #第三步 开始挖矿
  * 打开浏览器，输入192.168.1.254进入RockWeb挖矿界面
+  ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/rockwebip.png)
+
  * 如果有多台机器，点击Set IP设置矿机IP地址
+  ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/rockwebsetip.png)
+
  * 点击Pools，设置矿池账号
+   ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/rockwebsetpools.png)
+
  * 设置好之后，点击Reboot重启树莓派，等待大概1分钟之后，即可开始挖矿，MCU控制板上蓝灯闪烁表示正常
  
 #常见问题解答
@@ -48,5 +63,25 @@
     2. SD卡有故障，通过重新烧录镜像或者更换SD卡解决。
     3. 有USB数据线短路导致不稳定，检查USB数据线是否OK。
     
-    
+5. **升级RockWeb**
+	1. 使用SSH工具连接矿机（如192.168.1.254），用户名root，密码rockminer。
+	2. 输入命令ls，查看当前目录下是否有upgrade.sh文件：
+		1. 如果有，则直接输入命令./upgrade.sh回车，即可完成升级。
+		2. 如果没有，则手动创建：
+
+**创建upgrade.sh文件：**
+			
+```
+nano upgrade.sh
+```
+
+```
+#!/bin/shcd /rootgit clone https://github.com/rockminerinc/RockWeb.gitcp /root/RockWeb/* /usr/share/nginx/www/ -avpfrm -rf /root/RockWeb
+```
+**按ctrl+x退出，确认保存。修改upgrade.sh为可执行权限，然后执行**
+		
+```
+chmod 777 upgrade.sh
+./upgrade.sh
+```
 
