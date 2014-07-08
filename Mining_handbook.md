@@ -2,22 +2,34 @@
 配件清单为：
 
 * 5根USB线(4根短的,1根长的)
+
 ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/usblines.png)
+
 * 1个4口USBhub
+
 ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/usbhub.png)
+
 * 树莓派+树莓派电源线
+
 ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/raspberrypi.png)
+
 * 2根6pin电源线
+
 ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/psulines.png)
 
 
 #第二步 连接组装
 
   * 将4条短USB线分别插入HUB，连接MCU控制板,将长USB线小端插入HUB，另外一端连接树莓派
+ 
  ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/usbhub2.png)
+ 
  ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/usbmculine.png)
+  
   * 将树莓派电源线黑色一端插入树莓派，白色一端插入刀片板插座
+
  ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/redline.png)
+ 
  ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/raspberrypiotherend.png)
 
  * 将6PIN电源线插入刀片电源插口，连接好电源
@@ -25,12 +37,15 @@
  
 #第三步 开始挖矿
  * 打开浏览器，输入192.168.1.254进入RockWeb挖矿界面
+  
   ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/rockwebip.png)
 
  * 如果有多台机器，点击Set IP设置矿机IP地址
+  
   ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/rockwebsetip.png)
 
  * 点击Pools，设置矿池账号
+   
    ![](http://rm-img.b0.upaiyun.com/rockminer.com/images/handbook/rockwebsetpools.png)
 
  * 设置好之后，点击Reboot重启树莓派，等待大概1分钟之后，即可开始挖矿，MCU控制板上蓝灯闪烁表示正常
