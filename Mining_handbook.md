@@ -1,3 +1,5 @@
+[English verstion click here](https://github.com/rockminerinc/rockminerinc.github.io/blob/master/mining_handbook_en.md)
+
 #第一步 清点配件
 配件清单为：
 
